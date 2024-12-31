@@ -1,0 +1,261 @@
+/*  BASE  */
+main {
+    padding: 20px;
+    text-align: center;
+    flex: 1; /* Permet à la section main de s'étendre pour occuper tout l'espace restant */
+}
+
+html, body {
+    height: 100%; /* Assure que la hauteur totale est bien 100% */
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 400; /* Correspond à un style léger */
+    font-size: 18px;
+    color: #333; /* Une couleur lisible */
+    
+}   
+
+
+/*  HEADER  */
+
+header {
+    background-color: #4e47a9;
+    color: #fff;
+    padding: 25px 20px;
+}
+
+header nav h1 {
+    margin: 0;
+    display: inline-block;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+    float: right;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+header a:hover {
+    color: #dcd3ef; /* Couleur au survol, par exemple rouge */
+    text-decoration: none; /* Facultatif : enlève le soulignement au survol */
+}
+
+header nav h1 a {
+    text-decoration: none; /* Supprime le soulignement */
+    color: #dcd3ef; /* Applique la couleur des titres h1 */
+    font-family: 'Playfair Display', serif; /* Assure que la police est identique */
+    font-weight: 700; /* Gras comme les titres h1 */
+}
+header nav h1 a:hover {
+    color: #ffffff; /* Couleur légèrement différente au survol */
+    text-decoration: none; /* Assure qu'il n'y a toujours pas de soulignement */
+}
+
+
+/*  INTRODUCTION*/
+
+.introduction {
+    max-width: 1000px; /* Limite la largeur de la section */
+    margin: 0 auto; /* Centre la section */
+    text-align: center; /* Aligne le texte pour une apparence professionnelle */
+}
+
+.introduction h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+
+/*  SECTION  */
+.sections {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.section a {
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+}
+
+.section {
+    display: block;
+    text-align: center;
+    background-color: #f4f4f4;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 10px;
+    color: #333;
+    text-decoration: none;
+    width: 30%;
+}
+
+.section:hover {
+    background-color: #4e47a93b;
+    cursor: pointer;
+}
+
+.section img {
+border-radius: 5px;
+
+}
+
+
+/*  FOOTER  */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #28282854;
+    color: #fff;
+    margin-top: auto; /* Positionne le footer à la fin, quel que soit le contenu */
+}
+
+footer a {
+    color: #fff; /* Change la couleur du texte, par exemple vert */
+    text-decoration: none; /* Facultatif : souligne le texte */
+}
+
+footer a:hover {
+    color: #4e47a9; /* Couleur au survol, par exemple rouge */
+    text-decoration: none; /* Facultatif : enlève le soulignement au survol */
+}
+
+
+/*  TEXTES */
+p {
+    line-height: 1.6; /* Augmente l'espacement entre les lignes */
+    margin-bottom: 20px; /* Ajoute de l'espace sous chaque paragraphe */
+}
+
+h1 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700; /* Gras pour les titres */
+    color: #dcd3ef; /* Couleur légèrement plus foncée pour un contraste élégant */
+}
+
+h2, h3 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700; /* Gras pour les titres */
+    color: #4e47a9; /* Couleur légèrement plus foncée pour un contraste élégant */
+}
+
+.rouge {
+    color: rgb(222, 68, 68);
+}
+
+.vert {
+    color : rgb(70, 181, 70);
+}
+
+
+
+/*  TEXTE A GAUCHE/DROITE PHOTO  */
+
+.content-g {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align:justify;
+    gap: 50px; /* Espace entre le texte et l'image */
+    height: 35vh; /* Centre verticalement sur toute la hauteur */
+    padding-left: 40px; /* Décale l'ensemble des éléments de 40px depuis le bord gauche */
+    padding-right: 40px; /* Décale l'ensemble des éléments de 40px depuis le bord droit */
+}
+
+/* Option pour ajuster seulement le texte */
+.content-g .text {
+    margin-left: 40px; /* Décale uniquement le texte à partir du bord gauche */
+    margin-right: 40px; /* Décale uniquement le texte à partir du bord droit */
+}
+
+
+.imga img {
+    max-width: 85%; /* Réglez selon vos besoins */
+    height: auto;
+    border-radius: 5px;
+
+}
+
+.media video {
+    max-width: 85%; /* Ajuste la taille selon vos besoins */
+    height: auto; /* Préserve les proportions */
+    border-radius: 8px; /* Facultatif : ajoute des coins arrondis */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Facultatif : ajoute une ombre */
+}
+
+/*  NAVIGATION  */
+
+.navigation {
+    position: absolute;
+    bottom: 60px; /* Décalage juste au-dessus du footer */
+    width: 100%; /* Prend toute la largeur de la page */
+    display: flex;
+    justify-content: space-between; /* Place les flèches aux extrémités */
+    pointer-events: none; /* Désactive l'interaction sur le conteneur */
+    box-sizing: border-box; /* Assure que tout est bien calculé dans la largeur */
+}
+
+.arrow {
+    position: fixed; /* Position fixe par rapport à la fenêtre */
+    bottom: 80px; /* Distance du bas de l'écran */
+
+    pointer-events: auto;
+    display: block;
+    width: 40px; /* Taille globale du conteneur de la flèche */
+    height: 40px;
+    background-color: transparent;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+
+.arrow img {
+    width: 30px; /* Taille réduite de l'image */
+    height: 30px;
+    border-radius: 50%; /* Arrondi si nécessaire */
+}
+
+
+.arrow-left {
+    left: 10px; /* Distance de la gauche de la page */
+
+}
+
+.arrow-right {
+    right: 10px; /* Distance de la droite de la page */
+}
+
+.arrow[title]:hover:after {
+    content: attr(title);
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #333;
+    color: #fff;
+    padding: 5px 10px;
+    font-size: 12px;
+    white-space: nowrap;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}

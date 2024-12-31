@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <title>Projet 2</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image" href="img/favicon.png">
+
+</head>
+<body>
+    <header>
+        <nav>
+            <h1><a href="projet2.html">Projet PAP   </a></h1>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Base de données</h2>
+        
+            <div class="content-g">
+                <div class="imga">
+                    <img src="img/projet2/bd-modelea.png" alt="modele ea" height="100%">
+                </div>
+                <div class="text">
+                    <p>La première étape de ce projet a été de concevoir un <strong>modèle Entité-Association</strong> (EA) détaillé pour identifier les <strong>entités clés et leurs relations</strong>, ce qui nous a permis de structurer la base de données de manière logique et optimale. 
+                        Ce travail a facilité la <strong>gestion des données</strong> en assurant une certaine cohérence et l'intégrité des données, même pour des cas d’utilisation complexes. <br>
+                        Cette étape a été essentielle pour répondre efficacement aux besoins fonctionnels de l’application, et avoir une <strong>base stable</strong> pour commencer la réalisation du back-end.
+                    </p> 
+                </div>
+            </div>
+
+            <br>
+            <br>
+
+            <div class="content-g">
+                <div class="text">
+                    <p> Après la conception du modèle EA, nous avons été menés à traduire ce modèle en une <strong>base de données opérationnelle</strong>, en utilisant phpMyAdmin pour la <strong>création des tables et des relations</strong>. 
+                        Cet outil nous a permis d’implémenter les contraintes d’intégrité référentielle (clés primaires et étrangères), garantissant un comportement stable lors des <strong>interactions avec le backend</strong> . 
+                        L’intégration de notre base de données avec le backend nous a donc permis de centraliser les données et d’assurer des <strong> bonnes performance</strong>s lors des requêtes SQL.
+                    </p> 
+                </div>
+                <div class="imga">
+                    <img src="img/projet2/bd-tables.png" alt="tables php my admin" width="110%">
+                </div>
+            </div>
+
+            <br>
+            <br>
+
+            <div class="content-g">
+                <div class="imga">
+                    <img src="img/projet2/bd-hash.png" alt="mot de passe" height="100%">
+                </div>
+                <div class="text">
+                    <p>
+                        Pour garantir la <strong>sécurité des données sensibles</strong>, notamment les mots de passe, nous avons intégré des techniques comme le <strong>salage</strong>, le <strong>poivrage</strong> et la <strong>hachage</strong>.
+                        Chaque mot de passe a été combiné à une <strong>valeur aléatoire unique</strong> avant d’être transformé par un algorithme de <strong>hachage cryptographique</strong>.
+                        Ces pratiques rendent les mots de passe impossibles à inverser et résistent efficacement aux attaques par table de hachage ou rainbow table.
+                    </p> 
+                </div>
+            </div>
+
+        <br>
+        <br>
+        <br>
+
+        <h3>A propos du projet</h3>
+        <p>Versionning : GitLab<br>
+           Equipe : 3 personnes<br>
+           Communication : GoogleDocs, Discord <br>
+           Outils de développement : phpMyAdmin, looping <br>
+           Durée du projet : du 16 mai au 23 novembre 2024, 1,5 mois
+           
+        </p>
+        
+        <div class="navigation">
+            <a href="projet2.2.html" class="arrow arrow-right" title="Back-End">
+                <img src="img/flèche-droite.png" alt="Page précédente">
+            </a> 
+        </div>
+        
+        
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 Mon Portfolio</p>
+    </footer>
+</body>
+</html>
