@@ -120,6 +120,48 @@ border-radius: 5px;
 
 }
 
+/* NAVBAR */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Aligne les éléments avec de l'espace entre eux */
+    background-color: #4C3E9C; /* Couleur de la barre de navigation */
+    padding: 10px 20px; /* Espacement intérieur */
+}
+
+.navbar-left {
+    font-size: 24px;
+    font-family: 'Georgia', serif; /* Police personnalisée */
+    color: #fff;
+}
+
+.navbar-links {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Espacement entre les liens */
+}
+
+.navbar-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.navbar-links a:hover {
+    color: #d9c8f2; /* Couleur de survol */
+}
+
+.linkedin-logo {
+    width: 24px;
+    height: 24px;
+    transition: transform 0.3s ease;
+}
+
+.linkedin-logo:hover {
+    transform: scale(1.1); /* Agrandissement au survol */
+}
+
 
 /*  FOOTER  */
 footer {
