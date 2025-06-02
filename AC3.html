@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400&family=Playfair+Display:wght@400;700&display=swap"
+        rel="stylesheet">
+    <title>Portfolio - BUT Informatique</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image" href="img/favicon.png">
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <h1>Compétence 3 - Administrer des systèmes informatiques communicants complexes</h1>
+            <ul>
+                <li><a href="PortfolioApprentissage.html">Portfolio d'Apprentissage</a></li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="ac">
+
+            <h2>Déployer des services dans une architecture réseau</h2>
+
+            <br>
+
+            <br>
+            <h3>AC 1. Concevoir et développer des applications communicantes</h3>
+            <p>Je n’ai pas réalisé de projet concret permettant de valider directement cette compétence.
+                Toutefois, cette compétence a
+                été mise en œuvre à travers plusieurs travaux pratiques encadrés. Notamment, lors d’un TP sur la
+                programmation réseau en langage C, j’ai conçu une application client-serveur en utilisant les sockets
+                TCP/IP. J’ai appris à utiliser les fonctions fondamentales de l’API socket, telles que
+                <code>socket()</code>, <code>bind()</code>, <code>listen()</code>, <code>accept()</code>,
+                <code>connect()</code>, <code>send()</code> et <code>recv()</code>, pour établir une communication
+                bidirectionnelle entre un client et un serveur.
+            </p>
+
+            <p>Ce TP m’a également permis de développer un mini système de messagerie de type "chat", et de comprendre
+                comment gérer les connexions multiples côté serveur. J’ai enfin expérimenté la communication avec un
+                serveur HTTP, d’abord via Telnet, puis en écrivant un programme client capable d’envoyer une requête
+                HTTP et d’afficher la réponse. Ces activités m’ont permis d’acquérir les bases solides nécessaires pour
+                développer des applications communicantes simples, en maîtrisant à la fois les aspects techniques et les
+                principes du modèle client-serveur.</p>
+
+
+            <br><br>
+
+            <h3>AC 2. Utiliser des serveurs et des services réseaux virtualisés</h3>
+
+            <p>Dans le cadre d’une SAE, j’ai eu l’occasion de mettre en œuvre cette compétence en utilisant l’outil Docker pour créer et
+                gérer des environnements virtualisés. Nous avons conçu une architecture réseau composée de plusieurs
+                conteneurs Docker simulant des services distincts, tels qu’un serveur web, une base de données et un
+                reverse proxy. Cela nous a permis de comprendre et de maîtriser le fonctionnement des services en réseau
+                dans un environnement isolé et reproductible.</p>
+
+            <p>Grâce à Docker, nous avons pu déployer rapidement ces services, gérer leur communication via des réseaux
+                virtuels personnalisés, et configurer des ports d’accès. Ce travail nous a aussi amenés à manipuler des
+                fichiers <code>Dockerfile</code> et <code>docker-compose.yml</code> pour automatiser les déploiements.
+                Nous avons donc appris à configurer, utiliser et superviser des serveurs virtualisés, en reproduisant
+                des conditions proches d’un environnement de production.</p>
+
+            <p>Cette expérience m’a permis de mieux comprendre les enjeux de la virtualisation des services réseaux,
+                notamment en termes d’isolation, de portabilité et de gestion des ressources. Elle répond directement
+                aux attentes de cette compétence, en alliant théorie et pratique dans un contexte concret de déploiement
+                multi-services.</p>
+
+
+            <br><br>
+
+            <h3>AC 3. Sécuriser les services et données d’un système</h3>
+            <p>Dans le cadre de certains projets, nous avons mis l’accent sur la sécurisation des services et des
+                données. Face aux
+                exigences de fiabilité et aux risques croissants liés aux cyberattaques, il était essentiel de concevoir
+                un système résistant et conforme aux bonnes pratiques de cybersécurité.</p>
+            <p>Nous avons veillé à limiter les vulnérabilités du système en appliquant des méthodes robustes : les
+                requêtes SQL préparées ont permis d’éviter les injections SQL, courantes sur les applications mal
+                protégées, et le hachage des mots de passe a assuré la confidentialité des données sensibles même en cas
+                d’intrusion.</p>
+            <p>L’utilisation d’une architecture MVC côté serveur a facilité la gestion sécurisée des interactions entre
+                les composants du système, en séparant clairement la logique métier, les données et les vues. Cette
+                organisation contribue à prévenir les erreurs pouvant compromettre la sécurité.</p>
+            <p>La gestion des accès a également été encadrée par une authentification et un contrôle strict des droits
+                utilisateur, afin d’éviter les accès non autorisés aux ressources sensibles.</p>
+
+            <br>
+            <p>Vous trouverez plus de détails sur le <a href="PAP.html">Projet Pattes A Porter</a></p>
+
+
+        </section>
+    </main>
+
+
+    <footer>
+        <p>&copy; 2024 - OTMANI Zainab | <a href="cv.pdf" target="_blank">Voir mon CV </a></p>
+    </footer>
+</body>
+
+</html>

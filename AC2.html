@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400&family=Playfair+Display:wght@400;700&display=swap"
+        rel="stylesheet">
+    <title>Portfolio - BUT Informatique</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image" href="img/favicon.png">
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <h1>Compétence 2 - Optimiser des applications</h1>
+            <ul>
+                <li><a href="PortfolioApprentissage.html">Portfolio d'Apprentissage</a></li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="ac">
+
+            <h2>Sélectionner les algorithmes adéquats pour répondre à un problème donné</h2>
+
+
+            <br>
+            <h3>AC 1. Choisir des structures de données complexes adaptées au problème</h3>
+            <p>Dans le cadre de certaines réalisation, j’ai mis en place une architecture REST basée sur le modèle CRUD
+                (Create, Read, Update, Delete).
+                Ce modèle implique une structuration rigoureuse des données pour assurer leur cohérence, leur
+                évolutivité et leur bonne exploitation par l’API.</p>
+
+            <p>Pour cela, j’ai utilisé des structures de données complexes et relationnelles, conçues à partir de
+                modèles de bases de données relationnelles en SQL. Chaque entité (comme les utilisateurs, les articles,
+                les commentaires ou les événements) est représentée par une table avec des relations bien définies (via
+                des clés étrangères), ce qui permet une navigation logique et performante entre les données.</p>
+
+            <p>Par exemple, dans <strong>Blog Book</strong>, les commentaires sont liés à des articles et à des
+                utilisateurs grâce à des relations <em>many-to-one</em>. Cela permet de retrouver rapidement l’auteur
+                d’un commentaire ou l’ensemble des commentaires associés à un article, tout en assurant l’intégrité des
+                données via des contraintes de clé étrangère.</p>
+
+            <p>Le projet <strong>Blog Book</strong> intègre également des <strong>WebSocket</strong> pour permettre une
+                mise à jour en temps réel des commentaires, sans avoir besoin de recharger la page. Cela suppose une
+                gestion fine de la structure des messages échangés entre client et serveur, ainsi qu’un suivi efficace
+                des connexions actives.</p>
+
+            <p>Dans le site du stage, les données ont été structurées pour refléter les différents niveaux
+                d’utilisateurs et de contenus internes aux Maisons pour Tous, permettant ainsi une gestion claire des
+                droits, des événements et des ressources disponibles selon les profils.</p>
+            <p>Ce choix de structures relationnelles complexes était essentiel pour garantir la fiabilité des échanges
+                via l’API REST, mais aussi pour assurer une maintenance et une extension facilitées du système à long
+                terme.</p>
+            <br>
+
+
+            <p>Vous pouvez consulter les exemples d'implémentation dans les sections <a href="BlogBook.html">Blog
+                    Book</a> et <a href="PAP.html">Projet Pattes A Porter</a>.</p>
+
+
+            <br>
+            <br>
+
+            <h3>AC 2. Utiliser des techniques algorithmiques adaptées pour des problèmes complexes
+                (par ex. recherche opérationnelle, méthodes arborescentes,optimisation globale, intelligence
+                artificielle…)</h3>
+
+            <p>
+                <p>Dans le cadre de notre projet basé sur la théorie des graphes, nous avons mis en œuvre des techniques
+                algorithmiques avancées pour résoudre des problèmes complexes liés à la simulation de trajets
+                ferroviaires. </p>
+                
+                <p>En modélisant les gares et leurs connexions sous forme de graphes, nous avons utilisé des
+                algorithmes de parcours (par exemple en profondeur ou en largeur), d’optimisation de chemins, ainsi que
+                des approches récursives pour explorer efficacement les différentes combinaisons possibles d’itinéraires
+                et de placement de rails.</p>
+                <p>Ces méthodes ont été essentielles pour prendre en compte les contraintes du
+                jeu "Trains", telles que la gestion des ressources et des trajets concurrents. Nous avons également
+                mobilisé des structures de données adaptées (List, HashMap, Queue) afin d’assurer une gestion fluide et
+                performante des informations. </p>
+                Ce travail a nécessité une réflexion algorithmique rigoureuse, démontrant
+                notre capacité à appliquer des techniques de résolution adaptées à des problématiques complexes issues
+                de la recherche opérationnelle et de l’intelligence artificielle.
+            </p>
+            <p>Plus de détail sur <a href="Trains-Graphe.html">la partie Graphe du projet Trains</a></p>
+
+            <br><br>
+
+            <h3>AC 3. Comprendre les enjeux et moyens de sécurisation des données et du code</h3>
+
+            <p>Lors de certains projets, nous avons intégré des pratiques essentielles pour sécuriser les données et le
+                code, en réponse aux enjeux actuels comme les risques croissants de cyberattaques ou encore les
+                exigences du RGPD.
+            </p>
+
+            <br>
+
+            <h4>Enjeux identifiés </h4>
+
+            <p>Limiter les risques d’intrusion ou de fuite de données</p>
+            <p>Anticiper les impacts de la cybersécurité sur le projet</p>
+            <p>Assurer l’intégrité des données sur des plateformes distribuées</p>
+            <p>Protéger les données personnelles des utilisateurs conformément au RGPD</p>
+            <br>
+            <h4>Moyens mis en œuvre </h4>
+
+            <p>Utilisation de requêtes SQL préparées : pour éviter les injections SQL, une des attaques les plus
+                courantes sur les systèmes mal protégés.</p>
+            <p>Structure MVC côté back-end : séparation claire entre les données, la logique et l’interface, limitant
+                les risques d’erreurs ou d’exposition de données sensibles.</p>
+            <p>Hachage des mots de passe : les mots de passe ne doivent jamais être stockés en clair, ce qui empêche
+                leur récupération en cas d'accès non autorisé à la base de données.</p>
+
+            <br>
+
+            <p>Ces pratiques ont été mises en œuvre dans un environnement maîtrisé, à l’aide de PHP, phpMyAdmin et SQL,
+                avec une bonne coordination au sein d’une équipe de 3 personnes.
+                Le respect de ces principes a été essentiel pour garantir la fiabilité et la sécurité du système
+                développé. </p>
+
+            </p>
+            <br>
+            <p>Vous trouverez plus de détails sur le <a href="PAP.html">Projet Pattes A Porter</a></p>
+
+
+            <br><br>
+
+            <h3>AC 4. Évaluer l’impact environnemental et sociétal des solutions proposées</h3>
+            <p>Le site que j’ai développé pendant mon stage est destiné aux agents des Maisons pour Tous (MPT) de
+                Montpellier. Ces structures sont implantées dans divers quartiers, notamment des zones classées
+                prioritaires. Le site a donc un impact sociétal fort, en soutenant des actions de proximité à
+                destination de publics parfois fragilisés.</p>
+            <p>En facilitant le travail des agents (meilleure gestion interne, accès simplifié aux ressources, gain de
+                temps), le site contribue indirectement à améliorer la qualité des services offerts aux habitants. Ces
+                services incluent des activités culturelles, éducatives et sociales, essentielles au renforcement du
+                lien social.</p>
+            <p>Il favorise aussi l'inclusion en rendant plus accessibles les événements et services proposés par les
+                MPT. Ce soutien numérique améliore la visibilité des actions locales et participe à la réduction des
+                inégalités entre quartiers.</p>
+            <p>Enfin, le projet valorise l'engagement des structures locales et renforce la cohésion sociale dans les
+                territoires concernés. Il s'agit d'un exemple concret de solution numérique au service de l'intérêt
+                général.</p>
+            <p>Vous trouverez plus de détails sur ce projet dans la section dédiée de mon portfolio.</p>
+
+            <br><br>
+            <p>liens : <a href="PortfolioApprentissage.html">projet</a></p>
+
+
+        </section>
+    </main>
+
+
+    <footer>
+        <p>&copy; 2024 - OTMANI Zainab | <a href="cv.pdf" target="_blank">Voir mon CV </a></p>
+    </footer>
+</body>
+
+</html>

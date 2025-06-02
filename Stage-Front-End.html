@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MPT - Front-End</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="img/favicon.png">
+</head>
+<body>
+    <header>
+        <nav>
+            <h1><a href="Stage.html">Projet MPT</a></h1>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Front-End</h2>
+
+        <div class="content-g">
+            <div class="imga">
+                <img src="img/projet4/figma.png" alt="maquette figma" height="110%">
+            </div>
+            <div class="text">
+                <p>Le développement de l’interface utilisateur a débuté par une phase de <strong>maquettage avec Figma</strong>, afin de concevoir une interface moderne respectant la <strong>charte graphique</strong> du projet. J’ai adapté les écrans existants à la nouvelle plateforme, en collaboration avec l’équipe.</p>
+            </div>
+        </div>
+
+        <br><br>
+
+        <div class="content-g">
+            <div class="text">
+                <p>Le <strong>Front-End a été développé avec React.js</strong>, en combinant des composants réutilisables fournis par <strong>Material-UI (MUI)</strong>. J’ai utilisé la version payante avec personnalisation complète (SoftMUI) pour créer des <strong>composants interactifs</strong> : boutons, formulaires, listes déroulantes, etc.<br>
+                Le <code>useState</code> et <code>useEffect</code> ont été utilisés pour gérer les interactions et l’état local. Pour l’état global, j’ai opté pour <strong>MobX</strong>, qui centralise les données comme la sélection de dates ou de partenaires.</p>
+            </div>
+            <div class="imga">
+                <img src="img/projet4/mui.png" alt="composant React JSX" width="110%">
+            </div>
+        </div>
+
+        <br><br>
+
+        <div class="content-g">
+            <div class="text">
+                <p>
+                    L’espace "manifestation" est divisé en modules : <strong>création</strong>, <strong>édition</strong>, <strong>listing</strong> et <strong>options</strong> (autorisations, matériel). Chaque section est gérée dans des <strong>modals</strong> avec navigation entre les étapes (état, dates, partenaires, planning).<br>
+                    Les <strong>services React</strong> permettent d’appeler dynamiquement l’API backend selon les routes définies, tout en assurant la cohérence des données entre les composants.
+                </p>
+            </div>
+        </div>
+
+        <br><br><br>
+
+        <h3>Technologies utilisées</h3>
+        <p>
+            Librairies : React.js, Material-UI (SoftMUI)<br>
+            Gestion d’état : MobX<br>
+            API : Appels via services personnalisés (axios)<br>
+            Maquettes : Figma<br>
+            Tests & débogage : Chrome DevTools, console.log, inspecteur
+        </p>
+
+        <div class="navigation">
+            <a href="Stage-Back-End.html" class="arrow arrow-left" title="Back-End">
+                <img src="img/flèche-gauche.png" alt="Page précédente">
+            </a>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2025 Mon Portfolio</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MPT - Back-End</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="img/favicon.png">
+</head>
+<body>
+    <header>
+        <nav>
+            <h1><a href="Stage.html">Projet MPT</a></h1>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Back-End & API</h2>
+
+        <div class="content-g">
+            
+            <div class="text">
+                <p>Le back-end de l'application repose sur <strong>Django REST Framework</strong>, un framework robuste pour créer des API REST en Python. J’ai conçu les <strong>modèles de données</strong> (models) pour représenter les entités clés du projet, puis utilisé les <strong>sérialiseurs</strong> pour exposer ces objets sous forme de JSON. <br>
+                Chaque entité comme les <em>manifestations</em>, <em>autorisations</em> et <em>demandes de matériel</em> a été traitée via un <strong>ModelViewSet</strong> dédié.</p>
+            </div>
+        </div>
+
+        <br><br>
+
+        <div class="content-g">
+            <div class="text">
+                <p>Pour <strong>éviter les doublons</strong> entre les demandes d’autorisations et celles de matériel, j’ai mis en place un système d’<strong>identifiants préfixés</strong>. Cette stratégie a facilité la gestion des suppressions et des requêtes conditionnelles côté front-end.<br>
+                Les <strong>routes API</strong> sont déclarées dans un fichier centralisé <code>urls.py</code> et testées avec <strong>Postman</strong> pour garantir leur fiabilité. J’ai également utilisé des <strong>filtres dynamiques</strong> pour limiter certaines requêtes (par ex. éviter les doublons de demandes sur une même manifestation).</p>
+            </div>
+        </div>
+
+        <br><br>
+
+        <div class="content-g">
+            
+            <div class="text">
+                <p>
+                    J’ai adopté une <strong>structure modulaire</strong> pour les modèles, en les répartissant dans plusieurs fichiers et en centralisant leur import dans <code>__init__.py</code>. Cela rend le code plus lisible et maintenable. <br>
+                    Grâce à cette approche, les nouvelles entités ou évolutions de schéma peuvent être intégrées rapidement, tout en respectant la structure imposée par le projet MPT.
+                </p>
+            </div>
+        </div>
+
+        <br><br><br>
+
+        <h3>Outils & pratiques</h3>
+        <p>
+            API : Django REST Framework<br>
+            Outils de test : Postman<br>
+            Base locale : PostgreSQL via DataGrip<br>
+            Méthodologie : Agile (réunions toutes les 2 semaines)<br>
+            Versionnage : GitLab (Git Flow avec branches par développeur)
+        </p>
+
+        <div class="navigation">
+            <a href="stage-bd.html" class="arrow arrow-left" title="Base de données">
+                <img src="img/flèche-gauche.png" alt="Page précédente">
+            </a>
+            <a href="Stage-Front-End.html" class="arrow arrow-right" title="Front-End">
+                <img src="img/flèche-droite.png" alt="Page suivante">
+            </a>
+        </div>
+
+    </main>
+    <footer>
+        <p>&copy; 2025 Mon Portfolio</p>
+    </footer>
+</body>
+</html>

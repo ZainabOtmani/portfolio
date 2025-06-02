@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MPT - Base de données</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="img/favicon.png">
+</head>
+<body>
+    <header>
+        <nav>
+            <h1><a href="Stage.html">Projet MPT</a></h1>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Base de données & API</h2>
+
+        <div class="content-g">
+            
+            <div class="text">
+                <p>Le projet repose sur une architecture moderne basée sur <strong>Django REST Framework</strong> côté back-end. La première étape a consisté à modéliser la <strong>base de données</strong> PostgreSQL, en définissant les <strong>modèles Django</strong> représentant les entités clés des manifestations (événements, partenaires, horaires, options...).<br>
+                Un diagramme UML a été conçu pour structurer les informations autour de l’entité centrale <strong>“Manif”</strong>. L’organisation des relations (activités, demandes de matériel, autorisations, rapports, etc.) permet une <strong>gestion fine et évolutive</strong> des événements.</p>
+            </div>
+        </div>
+
+        <br><br>
+
+        <div class="content-g">
+            <div class="text">
+                <p>L’<strong>API REST</strong> a été implémentée grâce aux <strong>ModelViewSets</strong> de Django, avec la configuration des <strong>serializers</strong> pour exposer les données via des routes HTTP. La base de données a été testée localement avec <strong>DataGrip</strong> pour éviter toute interférence avec l’environnement de pré-production.</p>
+            </div>
+            <div class="imga">
+                <img src="img/projet4/rest.png" alt="Exemple API Django" width="110%">
+            </div>
+        </div>
+
+        <br><br>
+
+        <div class="content-g">
+            <div class="imga">
+                <img src="img/projet4/crud.jpeg" alt="Test Postman">
+            </div>
+            <div class="text">
+                <p>
+                    L’ensemble des routes de l’API ont été <strong>testées et validées via Postman</strong>, permettant d’envoyer des requêtes <strong>GET, POST, PUT, DELETE</strong>. Ces tests ont été cruciaux pour identifier des <strong>problèmes de doublons</strong> et valider la cohérence des réponses.<br>
+                    Grâce à ces tests et à une <strong>gestion rigoureuse des migrations</strong>, la base et l’API ont été stabilisées avant leur intégration complète au front-end développé en React.
+                </p>
+            </div>
+        </div>
+
+        <br><br><br>
+
+        <h3>À propos du stage</h3>
+        <p>Durée : 7 semaines (mars - mai 2025)<br>
+           Lieu : Pôle Numérique et Données - Montpellier Méditerranée Métropole<br>
+           Équipe projet : 1 interne, 1 alternante (moi-même), 1 chef de projet, 1 responsable d’unité<br>
+           Méthodologie : Agile (réunions toutes les 2 semaines, outil Bordy)<br>
+           Outils utilisés : Django, PostgreSQL, React, GitLab, Figma, Postman, DataGrip
+        </p>
+
+        <div class="navigation">
+            <a href="Stage-Back-End.html" class="arrow arrow-right" title="Back-End">
+                <img src="img/flèche-droite.png" alt="Page suivante">
+            </a>
+        </div>
+
+    </main>
+    <footer>
+        <p>&copy; 2025 Mon Portfolio</p>
+    </footer>
+</body>
+</html>
