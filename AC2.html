@@ -37,22 +37,20 @@
                 Ce modèle implique une structuration rigoureuse des données pour assurer leur cohérence, leur
                 évolutivité et leur bonne exploitation par l’API.</p>
 
+                <br>
+                <div class="imga">
+                    <img src="img/projet4/delete.png" alt="Illustration structure de données CRUD" width="40%" />
+                </div>
+                <br>
+
             <p>Pour cela, j’ai utilisé des structures de données complexes et relationnelles, conçues à partir de
                 modèles de bases de données relationnelles en SQL. Chaque entité (comme les utilisateurs, les articles,
                 les commentaires ou les événements) est représentée par une table avec des relations bien définies (via
                 des clés étrangères), ce qui permet une navigation logique et performante entre les données.</p>
 
-            <p>Par exemple, dans <strong>Blog Book</strong>, les commentaires sont liés à des articles et à des
-                utilisateurs grâce à des relations <em>many-to-one</em>. Cela permet de retrouver rapidement l’auteur
-                d’un commentaire ou l’ensemble des commentaires associés à un article, tout en assurant l’intégrité des
-                données via des contraintes de clé étrangère.</p>
+        
 
-            <p>Le projet <strong>Blog Book</strong> intègre également des <strong>WebSocket</strong> pour permettre une
-                mise à jour en temps réel des commentaires, sans avoir besoin de recharger la page. Cela suppose une
-                gestion fine de la structure des messages échangés entre client et serveur, ainsi qu’un suivi efficace
-                des connexions actives.</p>
-
-            <p>Dans le site du stage, les données ont été structurées pour refléter les différents niveaux
+            <p>Dans le site du <a href="Stage.html">Stage</a>, les données ont été structurées pour refléter les différents niveaux
                 d’utilisateurs et de contenus internes aux Maisons pour Tous, permettant ainsi une gestion claire des
                 droits, des événements et des ressources disponibles selon les profils.</p>
             <p>Ce choix de structures relationnelles complexes était essentiel pour garantir la fiabilité des échanges
@@ -60,9 +58,7 @@
                 terme.</p>
             <br>
 
-
-            <p>Vous pouvez consulter les exemples d'implémentation dans les sections <a href="BlogBook.html">Blog
-                    Book</a> et <a href="PAP.html">Projet Pattes A Porter</a>.</p>
+            <p>Vous pouvez consulter les exemples d'implémentation dans les sections <a href="PAP.html">Projet Pattes A Porter</a> et <a href="Stage.html">Stage</a> .</p>
 
 
             <br>
@@ -75,20 +71,31 @@
             <p>
                 <p>Dans le cadre de notre projet basé sur la théorie des graphes, nous avons mis en œuvre des techniques
                 algorithmiques avancées pour résoudre des problèmes complexes liés à la simulation de trajets
-                ferroviaires. </p>
+                ferroviaires. 
                 
                 <p>En modélisant les gares et leurs connexions sous forme de graphes, nous avons utilisé des
                 algorithmes de parcours (par exemple en profondeur ou en largeur), d’optimisation de chemins, ainsi que
                 des approches récursives pour explorer efficacement les différentes combinaisons possibles d’itinéraires
                 et de placement de rails.</p>
+
                 <p>Ces méthodes ont été essentielles pour prendre en compte les contraintes du
                 jeu "Trains", telles que la gestion des ressources et des trajets concurrents. Nous avons également
                 mobilisé des structures de données adaptées (List, HashMap, Queue) afin d’assurer une gestion fluide et
                 performante des informations. </p>
+
+                <br>
+                <div class="imga">
+                    <img src="img/projet4/recursif.png" alt="Illustration structure de données CRUD" width="70%" />
+                </div>
+                <br>
+
                 Ce travail a nécessité une réflexion algorithmique rigoureuse, démontrant
                 notre capacité à appliquer des techniques de résolution adaptées à des problématiques complexes issues
                 de la recherche opérationnelle et de l’intelligence artificielle.
             </p>
+
+            
+
             <p>Plus de détail sur <a href="Trains-Graphe.html">la partie Graphe du projet Trains</a></p>
 
             <br><br>
@@ -112,13 +119,11 @@
             <h4>Moyens mis en œuvre </h4>
 
             <p>Utilisation de requêtes SQL préparées : pour éviter les injections SQL, une des attaques les plus
-                courantes sur les systèmes mal protégés.</p>
-            <p>Structure MVC côté back-end : séparation claire entre les données, la logique et l’interface, limitant
-                les risques d’erreurs ou d’exposition de données sensibles.</p>
-            <p>Hachage des mots de passe : les mots de passe ne doivent jamais être stockés en clair, ce qui empêche
+                courantes sur les systèmes mal protégés. <br>
+            Structure MVC côté back-end : séparation claire entre les données, la logique et l’interface, limitant
+                les risques d’erreurs ou d’exposition de données sensibles. <br>
+            Hachage des mots de passe : les mots de passe ne doivent jamais être stockés en clair, ce qui empêche
                 leur récupération en cas d'accès non autorisé à la base de données.</p>
-
-            <br>
 
             <p>Ces pratiques ont été mises en œuvre dans un environnement maîtrisé, à l’aide de PHP, phpMyAdmin et SQL,
                 avec une bonne coordination au sein d’une équipe de 3 personnes.
